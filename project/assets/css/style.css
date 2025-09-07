@@ -1,0 +1,77 @@
+/* Reset nhẹ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Khung tổng thể của trang */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 40px;
+  border: 8px solid #4e342e; /* bo khung ngoài màu nâu cà phê */
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+/* Tiêu đề trang */
+h1 {
+  text-align: center;
+  color: #d84315;
+  font-size: 32px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+/* Khung sản phẩm */
+.product-card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  border-color: #3498db;
+}
+
+/* Hình ảnh sản phẩm */
+.product-card img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Tên sản phẩm */
+.product-card h3 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+/* Thông tin sản phẩm */
+.product-card p {
+  text-align: center;
+  font-size: 17px;
+  margin: 6px 0;
+}
+
+/* Giá khuyến mãi nổi bật */
+.product-card .promo-price {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 18px;
+}

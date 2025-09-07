@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/icon/fontawesome-free-6.7.0-web/css/all.css">
+    <style>
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.web {
+    background-color: #202020;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.text-top {
+    animation: color-change 2s infinite;
+    font-weight: 500;
+}
+
+@keyframes color-change {
+    0% { color: #34eb3d; }
+    50% { color: #3498db; }
+    100% { color: #e74c3c; }
+}
+
+.member a {
+    text-decoration: none;
+    color: #c9c9c9;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.member a:hover {
+    color: #34eb3d;
+}
+
+.header-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+.header-2_left img {
+    height: 50px;
+}
+
+.header-2_center {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.txtTimKiem {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.txtTimKiem:focus {
+    border-color: #34eb3d;
+}
+
+.header-2_center button {
+    background-color: #34eb3d;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header-2_center button:hover {
+    background-color: #2ecc71;
+}
+
+.header-2_right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-icon-shop {
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-icon-shop:hover {
+    background-color: #444;
+}
+
+.right-group {
+    text-align: left;
+}
+
+.group-text-shop {
+    font-weight: bold;
+    color: #34eb3d;
+}
+
+.group-text-count {
+    color: #c9c9c9;
+    font-size: 12px;
+}
+
+.header-3 {
+    background-color: #282828;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.subnav{
+        display: none;
+        list-style: none;
+        background-color: #202020; 
+        padding: 10px 0;
+        position: absolute;
+        min-width: 150px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .list-item-nav:hover .subnav{
+        display: block;
+        position: absolute;
+    }
+.subnav li {
+    padding: 5px 15px;
+}
+.subnav li a {
+    text-decoration: none;
+    color: #c9c9c9; 
+    font-size: 14px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.subnav  li:hover {
+    background-color: #444; 
+    width: 100%;
+    border-radius: 3px;
+}
+.subnav  li:hover a{
+    color: #34eb3d; 
+}
+
+.list-item {
+    position: relative;
+}
+.list-item-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+.list-item-link:hover {
+    color: #34eb3d;
+    background-color: #444;
+}
+.list-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #34eb3d;
+    transition: width 0.3s ease;
+    margin: auto;
+}
+.list-item:hover::after {
+    width: 100%;
+}
+
+
+/* SLIDER */
+.slider{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="web">
+        <div class="container">
+            <header class="header">
+                <div class="header-1">
+                    <div class="text-top">Điện máy siêu Sale, hàng hiệu chính hãng</div>
+                    <div class="member">
+                        <a href="#" class="favourite"> 
+                            <i class="fa-solid fa-heart"></i>
+                            Yêu thích(0)</a>
+                        <a href="#" class="login">
+                            <i class="fa-solid fa-user"></i>
+                            Đăng nhập</a>
+                        <a href="#" class="register">
+                            <i class="fa-solid fa-user-plus pr-2"></i>
+                            Đăng ký</a>
+                    </div>
+                </div>
+                <div class="header-2">
+                    <img src="assets/img/logo.png" alt="" class="header-2_left">
+                    <div class="header-2_center">
+                        <input type="text" placeholder="Từ khóa tìm kiếm" class = "txtTimKiem">
+                        <button ><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="header-2_right">
+                        <div>
+                            <button class="btn-icon-shop"><i class="fa-solid fa-cart-shopping" ></i></button>
+                        </div>
+                        <div class="right-group">
+                            <p class="group-text-shop"> Giỏ hàng</p>
+                            <p class="group-text-count">0 Sản phẩm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-3">
+                    <ul class="navbar">
+                        <li class = "list-item-nav">
+                            <a href="" class="list-item-link">DANH MỤC SẢN PHẨM</a>
+                            <ul class="subnav">
+                                <li>
+                                    <a href="MayPhaCaPhe.html">Máy pha cà phê</a>
+                                </li>
+                                <li><a href="DoDienTu.html">Đồ điện tử</a></li>
+                                <li><a href="MayGiat.html">Máy giặt</a></li>
+                                <li><a href="TuLanh.html">Tủ lạnh</a></li>
+                                <li><a href="MayHutBui.html">Máy hút bụi</a></li>
+                            </ul>
+                        
+                        </li>
+
+                        <li class = "list-item"><a href="" class="list-item-link">TRANG CHỦ</a></li>
+                        <li class = "list-item"><a href="" class="list-item-link">GIỚI THIỆU</a></li>
+                        <li class = "list-item"><a href="" class="list-item-link">KIẾN THỨC</a></li>
+                        <li class = "list-item"><a href="" class="list-item-link">TIN TỨC</a></li>
+                        <li class = "list-item"><a href="" class="list-item-link">KHUYẾN MẠI</a></li>
+                        <li class = "list-item"><a href="" class="list-item-link">TUYỂN DỤNG</a></li>
+                        <li class = "list-item"><a href="" class="list-item-link">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slider">
+            <img src="assets/img/slide-1.webp" alt="" width="920px" height="462px">
+            <div class="banner">
+                <img src="assets/img/banner-1.webp" alt="" width="259px" height="142px">
+                <img src="assets/img/banner-2.webp" alt="" width="259px" height="142px">
+                <img src="assets/img/banner-3.webp" alt="" width="259px" height="142px">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
